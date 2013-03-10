@@ -1,0 +1,41 @@
+
+/* overrides we previously put into teamsite */
+html #title-bar, html #triad { display:none; }
+html #triadmain { width: 996px; }
+html #content-area-template-B { padding: 0px; }
+
+/* for anything smaller than 1024 (adjusted for scrollbars) */
+@media (max-width:920px) {
+
+	/* kill all fixed width strutural elements */
+	html .bdywrpr, html #banner-wrapper, html #content-wrapper, html #triadmain  { width: 100%; }
+
+	/* kill the top va.gov nav */
+	html #banner-area-menu { display: none; }
+
+}
+
+/* for ipad portrait (and similar) */
+@media (max-width:1004px) and (min-width:750px) {
+
+	/* set HR to 90% because at 100% is creates a horizontal scroll */
+	html #content-footer-divider { width: 90%; }
+
+}
+
+/* for mobile */
+@media (max-width:750px) {
+
+	/* remove padding from body to tighten page up because that space is a waste on mobile */
+	html .mainbody { padding:0; }
+
+	/* kill va.gov search box */
+	html #banner-area-search { display:none; }
+
+	/* allow main VA logo to scale */
+	html #banner-image { width: 100%; }
+	html #banner-image img { width: 100%; height: auto; }
+
+	/* not sure why HR size acts weird */
+	html #content-footer-divider { width: 85%; }
+}

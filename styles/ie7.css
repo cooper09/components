@@ -1,0 +1,56 @@
+/* line 3, ../sass/ie7.sass */
+#menu .meganizr li a {
+  padding: 7px 5px 0 5px;
+}
+
+/* line 6, ../sass/ie7.sass */
+.social-icon {
+  margin-right: 0;
+}
+
+/* line 9, ../sass/ie7.sass */
+#content-container {
+  width: 940px;
+  _width: 940px;
+}
+
+/* line 13, ../sass/ie7.sass */
+#menu {
+  margin: 0;
+}
+
+/* line 16, ../sass/ie7.sass */
+fieldset {
+  height: 25px;
+}
+
+/* line 20, ../sass/ie7.sass */
+.promo {
+  width: 45.5%;
+}
+
+/* line 23, ../sass/ie7.sass */
+.small-promo {
+  width: 28.5%;
+}
+
+/* line 26, ../sass/ie7.sass */
+#search input#site-search-button {
+  display: inline;
+  width: 90px;
+}
+
+/* line 30, ../sass/ie7.sass */
+#search input#QTlabel {
+  width: 65%;
+}
+
+/* line 33, ../sass/ie7.sass */
+#search-button button {
+  display: none;
+}
+
+/* line 36, ../sass/ie7.sass */
+.job-search-button {
+  display: inline;
+}

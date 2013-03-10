@@ -1,0 +1,62 @@
+// ---------------------------------------------------------------------------
+// Imports and includes
+@include border-box-sizing  
+
+// ---------------------------------------------------------------------------
+// Basic Grid
+
+$total-columns: 12
+$column-width: 4em
+$gutter-width: 1em
+$grid-padding: $gutter-width
+
+$show-grid-backgrounds: true
+
+$grey: #b5b5b5
+$light-grey: lighten($grey, 25%)
+$dark: #555
+$orange: #ffb100
+$green: #80ba9c
+$blue: #005a89
+$white: #fff
+
+// breakpoints
+$tablet-break: 959px
+$tablet-columns: 10
+$phone-break: 500px
+$phone-columns: 8
+$iphone-break: 400px
+
+// breakpoint shortcuts
+$desktop: $tablet-break $total-columns
+$tablet: $phone-break $tablet-columns $tablet-break
+$phone: $phone-columns $phone-break
+$iphone: $phone-columns $iphone-break
+
+$legacy-support-for-ie  : true
+$legacy-support-for-ie6 : $legacy-support-for-ie
+$legacy-support-for-ie7 : $legacy-support-for-ie
+
+// mixins
+
+@mixin body-font
+	font-family: "Arial", Helvetica, sans-serif
+
+@mixin heading-font
+	font-family: "Open Sans", Helvetica, sans-serif
+
+@mixin button
+	color: $blue
+	text-decoration: none
+	font-weight: 600
+	white-space: nowrap
+	&:hover
+		text-decoration: underline
+	a
+		text-decoration: none
+		color: $blue
+		&:link
+			color: $blue
+		i
+			margin-left: 5px
+	

@@ -1,0 +1,50 @@
+<link href="styles/site-styles.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/VACAREERS/assets/common/js/jquery-17.js"></script>
+
+<!-- start content -->
+<div id="container">
+	Container 3.2
+	<div id="content-container">
+		<div id="btn1">Button 1</div>
+	    <div id="btn2">Button 2</div>
+	    <div id="btn3">Button 3</div>
+	    <div id="btn4">Button 4</div>
+	</div>
+</div><!-- end container -->
+<script type="text/javascript" src="/VACAREERS/assets/common/js/pre-content.js"></script>
+<script>
+$(document).ready(function(){
+
+	/* $("#btn1").click(function () {
+      	$(this).slideToggle("slow");
+    });  */
+
+	("#btn1").toggle(function(){
+      $(this).css("height","3em")
+    },
+    function(){
+     $(this).css("height","1.5em")
+   }); 
+
+	$("#btn2").toggle(function(){
+      $(this).css("height","3em")
+    },
+    function(){
+     $(this).css("height","1.5em")
+   });
+
+	$("#btn3").toggle(function(){
+      $(this).css("height","3em")
+    },
+    function(){
+     $(this).css("height","1.5em")
+   });
+
+	$("#btn4").toggle(function(){
+      $(this).css("height","3em")
+    },
+    function(){
+     $(this).css("height","1.5em")
+   });
+  });
+</script>
