@@ -1139,3 +1139,9 @@ p {
 #item1 img {
   display: none;
 }
+@media (max-width: 500px) {
+  /* line 111, ../sass/site-styles.sass */
+  #item1 img {
+    width: 75%;
+  }
+}
