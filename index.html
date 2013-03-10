@@ -5,7 +5,11 @@
 <div id="container">
 	Container 3.2
 	<div id="content-container">
-		<div id="btn1">Button 1</div>
+		<span id="btn1">Button 1
+			<div id="item1">
+				<img src="images/Beyonce_31.jpg" width="20%">
+			</div>
+		</span><!-- end btn1 -->
 	    <div id="btn2">Button 2</div>
 	    <div id="btn3">Button 3</div>
 	    <div id="btn4">Button 4</div>
@@ -16,10 +20,12 @@
 $(document).ready(function(){
 
 	$("#btn1").toggle(function(){
-      $(this).css("height","3em")
+      $(this).css("height","3em");
+      $("#item1 img").css("display","inline-block");
     },
     function(){
-     $(this).css("height","1.5em")
+     $(this).css("height","1.5em");
+     $("#item1 img").css("display","none");
    });
 
 	$("#btn2").toggle(function(){
@@ -36,11 +42,13 @@ $(document).ready(function(){
      $(this).css("height","1.5em")
    });
 
-	$("#btn4").toggle(function(){
-      $(this).css("height","3em")
+	$("#btn4").toggle(function(){	
+      $(this).css("height","3em");
+      $("#item1").css("display","inline");
     },
     function(){
-     $(this).css("height","1.5em")
+     $(this).css("height","1.5em");
+      $("#item1").css("display","none");
    });
   });
 </script>

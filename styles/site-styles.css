@@ -1121,3 +1121,21 @@ p {
     background: green;
   }
 }
+
+/* line 103, ../sass/site-styles.sass */
+#item1 {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+  background: cyan;
+  display: none;
+  float: right;
+  margin-right: 0;
+  #margin-left: -1em;
+  display: inline;
+}
+/* line 108, ../sass/site-styles.sass */
+#item1 img {
+  display: none;
+}
