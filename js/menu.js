@@ -17,8 +17,8 @@ $(document).ready(function(){
     switch (open1) { 
       case 0:
        $(this).animate({
-          height: '100'
-        }, 200, function() {
+          height: '100',
+        }, 200, 'swing', function() {
           // Animation complete.
           open1 = 1;
           console.log("btn1 now open: "+ open1 )
@@ -51,7 +51,7 @@ $(document).ready(function(){
         case 0:
          $(this).animate({
             height: '100'
-          }, 200, function() {
+          }, 200,  function() {
             // Animation complete.
             open2 = 1;
             console.log("btn2 now open: "+ open2 )

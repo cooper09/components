@@ -42,7 +42,7 @@ p
 
 #content-container
   +container
-  //+susy-grid-background
+  +susy-grid-background
   background: gold
   width: 100%
 
@@ -60,12 +60,11 @@ p
 #btn2
   +span-columns(4,12)
   +heading-font
-  margin: 0.25em
+  margin: 0.0em
   background: yellow
   cursor: pointer
   +at-breakpoint($tablet)
-    //+span-columns(10)
-    //display: none
+ 
   +at-breakpoint($phone)
     +span-columns(6,12)
     margin: 0em
@@ -75,12 +74,11 @@ p
 #btn3
   +span-columns(4,12)
   +heading-font
-  margin:  0.25em
+  margin:  0em
   background: orange
   cursor: pointer
   +at-breakpoint($tablet)
-    //+span-columns(10)
-    //display: none
+
   +at-breakpoint($phone)
     margin: 0em
     +span-columns(6,12)
@@ -88,12 +86,11 @@ p
 #btn4
   +span-columns(4,12)
   +heading-font
-  margin:  0.25em
+  margin:  0em
   background: olive
   cursor: pointer
   +at-breakpoint($tablet)
-    //+span-columns(10)
-    //display: none
+  
   +at-breakpoint($phone)
     +span-columns(6,12)
     margin: 0em
@@ -111,8 +108,36 @@ p
     img
       width: 75%
 
+#sidenav
+  +span-columns(3,12)
+  padding: 1em
+  +gray-border
+  +at-breakpoint($phone)
+    +span-columns(8)
 
+#main
+  +span-columns(6,12)
+  //background: magenta
+  padding: 1em
+  +gray-border
+  img
+    +span-columns(12)
+  +at-breakpoint($phone)
+    +span-columns(8) 
 
+#promos
+  +span-columns(3,12)
+  background: #f1f1ef
+  +omega
+  +at-breakpoint($phone)
+    +span-columns(8)
 
+#cta
+  +gray-border
+  margin-bottom: 1em
+  margin-left: 1em
+
+.title
+  font-size: 1.3em
 
 
