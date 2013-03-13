@@ -1,12 +1,21 @@
 $(document).ready(function(){
 
+  
+    $("#menuBtn").toggle(function(){
+      $("#menu .mzr-responsive").css("display","block")
+      $("#menu").css("display","block")
+    } $("#menuBtn").toggle(function(){
+      $("#menu .mzr-responsive").css("display","block")
+      $("#menu").css("display","block")
+    }
+   );
+
   var open1 = 0;
   var open2 = 0;
   var open3 = 0;
   var open4 = 0;
 
 	$("#btn1").click(function(){
-    $("#dropdown").css("display","inline-block");
     $("#btn2").css("height","1.5em");
     $("#btn3").css("height","1.5em");
     $("#btn4").css("height","1.5em");
@@ -17,7 +26,7 @@ $(document).ready(function(){
 
     switch (open1) { 
       case 0:
-       $("#dropdown").animate({
+       $(this).animate({
           height: '100',
         }, 200, 'swing', function() {
           // Animation complete.
@@ -26,8 +35,8 @@ $(document).ready(function(){
         });// end animate
        break;
       case 1:
-       $("#dropdown").animate({
-          height: '0'
+       $(this).animate({
+          height: '25'
         }, 200, function() {
           // Animation complete.
           open1 = 0;
@@ -40,7 +49,6 @@ $(document).ready(function(){
   });//end btn1 click
 
 	$("#btn2").click(function(){
-    $("#dropdown2").css("display","inline-block");
     $("#btn1").css("height","1.5em");
     $("#btn3").css("height","1.5em");
     $("#btn4").css("height","1.5em");
@@ -51,7 +59,7 @@ $(document).ready(function(){
 
       switch (open2) { 
         case 0:
-         $("#dropdown2").animate({
+         $(this).animate({
             height: '100'
           }, 200,  function() {
             // Animation complete.
@@ -60,8 +68,8 @@ $(document).ready(function(){
           });// end animate
          break;
         case 1:
-         $("#dropdown2").animate({
-            height: '0'
+         $(this).animate({
+            height: '25'
           }, 200, function() {
             // Animation complete.
             open2 = 0;

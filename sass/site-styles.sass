@@ -43,6 +43,7 @@ p
 #content-container
   +container
   +susy-grid-background
+  //overflow: hidden
   background: gold
   width: 100%
 
@@ -61,8 +62,9 @@ p
   +span-columns(4,12)
   +heading-font
   margin: 0.0em
-  background: yellow
+  background: pink
   cursor: pointer
+  //overflow: hidden
   +at-breakpoint($tablet)
  
   +at-breakpoint($phone)
@@ -97,16 +99,23 @@ p
     +omega
     background: green
 
-#item1 
-  +span-columns(3,12)
-  background: aqua
+#dropdown
+  +span-columns(12)
   display: none
-  +omega
-  img
-    display: none
+  background: aqua
+  margin-top: 1em
+  z-index: 9999
   +at-breakpoint($phone)
-    img
-      width: 75%
+    +span-columns(16)
+
+#dropdown2
+  +span-columns(12)
+  display: none
+  background: purple
+  margin-top: 1em
+  z-index: 9999
+  +at-breakpoint($phone)
+    +span-columns(16)
 
 #sidenav
   +span-columns(3,12)
