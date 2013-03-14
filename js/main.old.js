@@ -7,9 +7,9 @@ $(document).ready(function(){
 
 	$("#btn1").click(function(){
     $("#dropdown").css("display","inline-block");
-    $("#dropdown2").css("height","0em");
-    $("#dropdown3").css("height","0em");
-    $("#dropdown4").css("height","0em");
+    $("#btn2").css("height","1.5em");
+    $("#btn3").css("height","1.5em");
+    $("#btn4").css("height","1.5em");
 
     open2 = 0;
     open3 = 0;
@@ -41,9 +41,9 @@ $(document).ready(function(){
 
 	$("#btn2").click(function(){
     $("#dropdown2").css("display","inline-block");
-    $("#dropdown").css("height","0em");
-    $("#dropdown3").css("height","0em");
-    $("#dropdown4").css("height","0em");
+    $("#btn1").css("height","1.5em");
+    $("#btn3").css("height","1.5em");
+    $("#btn4").css("height","1.5em");
 
     open1 = 0;
     open3 = 0;
@@ -72,10 +72,9 @@ $(document).ready(function(){
      });//end btn2 click
 
 	$("#btn3").click(function(){
-    $("#dropdown3").css("display","inline-block");
-    $("#dropdown").css("height","0em");
-    $("#dropdown2").css("height","0em");
-    $("#dropdown4").css("height","0em");
+    $("#btn1").css("height","1.5em");
+    $("#btn2").css("height","1.5em");
+    $("#btn4").css("height","1.5em");
 
     open1 = 0;
     open2 = 0;
@@ -83,7 +82,7 @@ $(document).ready(function(){
 
       switch (open3) { 
       case 0:
-       $("#dropdown3").animate({
+       $(this).animate({
           height: '100'
         }, 200, function() {
           // Animation complete.
@@ -92,8 +91,8 @@ $(document).ready(function(){
         });// end animate
        break;
       case 1:
-       $("#dropdown3").animate({
-          height: '0'
+       $(this).animate({
+          height: '25'
         }, 200, function() {
           // Animation complete.
           open3 = 0;
@@ -106,10 +105,9 @@ $(document).ready(function(){
      });//end btn3 click
 
 	$("#btn4").click(function(){	
-    $("#dropdown4").css("display","inline-block");
-    $("#dropdown").css("height","0em");
-    $("#dropdown2").css("height","0em");
-    $("#dropdown3").css("height","0em");
+    $("#btn1").css("height","1.5em");
+    $("#btn2").css("height","1.5em");
+    $("#btn3").css("height","1.5em");
 
     open1 = 0;
     open2 = 0;
@@ -117,7 +115,7 @@ $(document).ready(function(){
 
       switch (open4) { 
       case 0:
-       $("#dropdown4").animate({
+       $(this).animate({
           height: '100'
         }, 200, function() {
           // Animation complete.
@@ -126,8 +124,8 @@ $(document).ready(function(){
         });// end animate
        break;
       case 1:
-       $("#dropdown4").animate({
-          height: '0'
+       $(this).animate({
+          height: '25'
         }, 200, function() {
           // Animation complete.
           open4 = 0;
